@@ -2,9 +2,10 @@
   "name": "sba-319-mongo-db-application",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "type":"module",
+  "main": "index.mjs",
+  "type": "module",
   "scripts": {
+    "start": "node index.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +19,9 @@
   },
   "homepage": "https://github.com/soumyayalahankaajjegowda/SBA-319-mongo-DB-application#readme",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "express-validator": "^7.2.1",
     "mongodb": "^6.13.0",
     "mongoose": "^8.9.6"
   }
