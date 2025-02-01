@@ -1,7 +1,7 @@
 //countryRoutes.mjs
 // imports
 import express from "express";
-import countryCtrl from "./controllers/countrycontrollers.mjs";
+import countryCtrl from "../controllers/countrycontrollers.mjs";
 const router = express.Router();
 
 // CREATE //

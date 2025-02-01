@@ -1,6 +1,7 @@
 // index.mjs
 //imports
 import express from "express";
+import mongoose from 'mongoose';
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
 import connectDB from "./db/conn.mjs";
@@ -9,13 +10,17 @@ import { countries } from "./data/countries.mjs";
 import Country from "./models/countrySchema.mjs";
 
 
-mongoose.connect(process.env.mongo_URI).then(() => console.log('mongoDB connected'))
 //setups
 dotenv.config();
+
 const app = express();
-const PORT = process.env.PORT || 3000;
+let PORT = process.env.PORT || 3000;
 
 //DB Connection
+mongoose
+.connect(process.env.MONGO_URI)
+.then(() => console.log('MongoDB connected'))
+.catch((error) => console.log('Error connecting to MongoDB:', error));
 connectDB();
 
 //middleware
