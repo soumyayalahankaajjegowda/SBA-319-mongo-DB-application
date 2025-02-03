@@ -24,4 +24,4 @@ languageSchema.index({ capital: 1 });
 
 //export data model using country as the reference name
 //"country" is thename of the collection in the database
-export default mongoose.model("country", languageSchema);
+export default mongoose.model("language", languageSchema);
