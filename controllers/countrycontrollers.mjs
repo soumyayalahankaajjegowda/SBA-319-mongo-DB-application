@@ -1,7 +1,7 @@
  //country controllers
  //imports
  //import db from"../db/conn.mjs";
-
+import Country from "../models/countrySchema.mjs";
 
 
  // @route:  POST /countries
