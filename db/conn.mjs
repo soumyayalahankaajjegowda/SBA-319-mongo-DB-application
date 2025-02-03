@@ -1,4 +1,4 @@
-//conn
+//conn.mjs
 //imports
 import mongoose from "mongoose";
 import dotenv from "dotenv";
@@ -20,4 +20,4 @@ export default async function connectDB() {
             console.error("Error connecting to MongoDB:",error);
          //   process.exit(1);
         }
-    }
+}

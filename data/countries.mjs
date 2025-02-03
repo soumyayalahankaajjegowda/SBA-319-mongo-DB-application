@@ -1,4 +1,4 @@
-//countries
+//countries.mjs
 //export
 
 export const countries = [

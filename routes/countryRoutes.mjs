@@ -1,9 +1,10 @@
 //countryRoutes.mjs
 // imports
 import express from "express";
+import Country from "../models/countrySchema.mjs";
 import countryCtrl from "../controllers/countrycontrollers.mjs";
 const router = express.Router();
-
+ console.log(country);
 // CREATE //
 //@route: POST /countries
 //@desc: add country to the data base

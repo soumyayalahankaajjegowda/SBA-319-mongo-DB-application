@@ -30,12 +30,21 @@ app.use(bodyParser.json({extended: true}));
 //routes
 app.use("/", countryRoutes);
 
-//send route
+// app.get('/country', async (req, res) => {
+//     const users = await Country.find()
+//     console.log(country)
+//     res.json(country)
+//     });
+
+//     app.get('/', (req, res) => {
+//         res.send('hello (from server)') 
+//     });
+
 app.get("/seed", async (req, res) => {
     try{
     //optional step to delete what is currently in the database before creating items
     // this step avoids duplicates
-    await countrySchema.deleteMany({});
+    await country.deleteMany({});
 
 
 //create items in Database
